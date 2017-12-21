@@ -1,0 +1,54 @@
+BOMBERMAN
+
+GAME INFORMATION:-
+
+	The exciting game isn't it ? the one game you used to brag about winning to your friends in your childhood!!! :p
+	
+	REPRESENTATION OF THE PLAY CHARACTERS.
+	
+	B -->	THE BOMBERMAN [YOU].
+	E -->	ENEMIES.
+	X -->	WALLS.	
+	/ -->	BRICKS.
+	- -->	EXIT GATE TO WIN THE GAME.
+	e -->	EXPLOSION ARENA.
+	o -->	THE KEY FOR GOING THROUGH THE EXIT GATE.
+	
+	THE MOVES ARE AS FOLLOWS.
+	
+	a -->   MOVE LEFT
+	s -->	MOVE DOWN
+	d -->	MOVE RIGHT
+	w --> 	MOVE UP
+	b --> 	PLANT BOMB
+	q --> 	QUIT [please dont do this unless its too bad :P]
+	
+	The game begins you the bomberman[GREEN] at the left-top position can move in any of the four directions but not
+	through the walls and bricks you have 3 lives from the beginning of the game if you lose all the 3 lives GAMEOVER!!!.
+	The bricks can be destroyed by planting the bomb such that bomb's explosion arena covers the brick and bomb's explosion
+	arena is one block in all directions including the block where the bomb wasplaced . i.e total of 5 positions.
+	
+	You destroy all the enemies you'll get to know where the KEY is for EXITGATE , then only you get the key and finish
+	the game by exiting through the EXITGATE .
+	
+	SCORE RULES
+	 Destroying an enemy = 100 points
+	 Destroying a brick  = 20  points 
+	 Got killed  		 = -1  life
+	 
+	 hope you enjoy the game
+
+TECHNICAL INFORMATION:-
+	
+	Person class is defined in person.py which is inherited into Player as well as Enemy Classes .	 
+	
+	Modularity is implemented every class is in different .py files and are imported if neccessary. 
+
+	Polymorphism is implemented where plenty of enemies are created from the same Enemy Classes and
+		there individual methods like move_left(), move_right() etc worked fine without disturbing
+		player's move_left() and move_right() methods
+
+	Encapsulation is also being implemented.
+
+	For bonus , the termcolor package is installed --> https://pypi.python.org/pypi/termcolor can be downloaded from here 
+	and is used to give colour to characters.	
